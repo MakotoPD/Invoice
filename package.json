@@ -1,5 +1,5 @@
 {
-  "name": "lsilith",
+  "name": "lilith",
   "version": "1.0.0",
   "description": "Quick valuations and cost estimates",
   "main": "main.js",
@@ -13,7 +13,8 @@
   "author": "makoto <makoto.kontakt@gmail.com>",
   "license": "Apache-2.0",
   "devDependencies": {
-    "electron": "^8.1.1"
+    "electron": "^8.1.1",
+    "minimist": "^1.2.5"
   },
   "dependencies": {
     "cargodb": "^2.0.0",
@@ -28,11 +29,13 @@
     "appId": "com.makoto.Lilith",
     "productName": "Lilith",
     "linux": {
-      "category":"Office",
-      "icon":"assets/img/icons",
-      "packageCategory":"office",
+      "category": "Office",
+      "icon": "assets/img/icons",
+      "packageCategory": "office",
       "maintainer": "makoto <makoto.kontakt@gmail.com>",
-      "target": [ "deb" ]
+      "target": [
+        "deb"
+      ]
     },
     "deb": {
       "depends": [
