@@ -9,13 +9,17 @@
             "use": "@now/node"
         },
         { 
-            "src": "/public/**",
+            "src": "/public/*",
             "use": "@now/static"
         }
     ],
     "routes": [
         { 
             "src": "/public/.*",
+            "dest": "/main.js"
+        },
+        {
+            "src": "/.*",
             "dest": "/main.js"
         }
     ]
