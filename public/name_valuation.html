@@ -32,7 +32,7 @@
             const btn = document.querySelector('#btn_back')
       
             btn.addEventListener("click", function() {
-              remote.getCurrentWindow().loadFile('index.html')
+              remote.getCurrentWindow().loadFile('public/index.html')
             });
         </script>
         <script>
@@ -43,14 +43,14 @@
                     event.preventDefault();
                     nextBTN.click();
                 }
-            })
+            });
         </script>
         <script>
-
+            
             document.getElementById('btn_next').addEventListener('click', () => {
                 for (let f = 0; f <= document.getElementsByTagName('li').length; f++) {
                     if (f == document.getElementsByTagName('li').length) {
-                        remote.getCurrentWindow().loadFile('valuation.html')
+                        remote.getCurrentWindow().loadFile('public/valuation.html')
                     }
                 }}
             );

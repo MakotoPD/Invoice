@@ -33,7 +33,7 @@
       const btn = document.querySelector('#btn_back')
 
       btn.addEventListener("click", function() {
-        remote.getCurrentWindow().loadFile('name_valuation.html')
+        remote.getCurrentWindow().loadFile('public/name_valuation.html')
       });
     </script>
     <script>
@@ -51,7 +51,7 @@
       document.getElementById('btn_generate').addEventListener('click', () => {
         for (let f = 0; f <= document.getElementsByTagName('li').length; f++) {
           if (f == document.getElementsByTagName('li').length) {
-            remote.getCurrentWindow().loadFile('create_jm.html')
+            remote.getCurrentWindow().loadFile('public/create_jm.html')
           }
         }}
       );

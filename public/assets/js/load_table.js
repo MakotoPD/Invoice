@@ -1,11 +1,11 @@
 const fs = require('fs');
 const path = require('path');
 
-let data = fs.readFileSync('json_files/nazwy.json', 'utf-8');
+let data = fs.readFileSync('public/json_files/nazwy.json', 'utf-8');
 let object = JSON.parse(data);
 
 
-let val = fs.readFileSync('json_files/nameValuation.json', 'utf-8');
+let val = fs.readFileSync('public/json_files/nameValuation.json', 'utf-8');
 let nameval = JSON.parse(val);
 
 let nm_val = document.getElementById('name_valutation');
@@ -13,7 +13,7 @@ let nm_val = document.getElementById('name_valutation');
 nm_val.append(nameval[0]);
 
 
-let jm = fs.readFileSync('json_files/jm.json', 'utf-8');
+let jm = fs.readFileSync('public/json_files/jm.json', 'utf-8');
 let namejm = JSON.parse(jm);
 
 

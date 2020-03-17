@@ -1,9 +1,9 @@
 const fs = require('fs');
 
-let data = fs.readFileSync('json_files/nazwy.json', 'utf-8');
+let data = fs.readFileSync('public/json_files/nazwy.json', 'utf-8');
 let object = JSON.parse(data);
 
-let val = fs.readFileSync('json_files/nameValuation.json', 'utf-8');
+let val = fs.readFileSync('public/json_files/nameValuation.json', 'utf-8');
 let nameval = JSON.parse(val);
 
 let nm_val = document.getElementById('name_valutation');

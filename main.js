@@ -13,11 +13,10 @@ function createWindow () {
       nodeIntegration: true,
       nativeWindowOpen: true,
     },
-    icon: __dirname +'/assets/img/icons/icon64.png'
+    icon: __dirname +'/public/assets/img/icons/icon64.png'
   })
   
-  win.webContents.openDevTools()
-  win.loadFile('index.html') 
+  win.loadFile('public/index.html') 
 
   function createAboutWindow () {
     const about_win = new BrowserWindow({
@@ -31,11 +30,11 @@ function createWindow () {
       webPreferences: {
         nodeIntegration: true
       },
-      icon: __dirname +'/assets/img/icons/icon64.png'
+      icon: __dirname +'/public/assets/img/icons/icon64.png'
     })
 
 
-    about_win.loadFile('about_program.html')
+    about_win.loadFile('/public/about_program.html')
 
 }
 
@@ -55,7 +54,7 @@ function createWindow () {
             {
               label: 'Author',
               click() {
-                  shell.openExternal('https://makotopl.github.io')
+                  shell.openExternal('https://www.makotopl.pl')
               }
             },
             {type: 'separator'},

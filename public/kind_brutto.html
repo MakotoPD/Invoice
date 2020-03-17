@@ -35,7 +35,7 @@
         const btn = document.querySelector('#btn_back')
   
         btn.addEventListener("click", function() {
-          remote.getCurrentWindow().loadFile('price_list.html')
+          remote.getCurrentWindow().loadFile('public/price_list.html')
         });
     </script>
 
@@ -43,7 +43,7 @@
          const malo = document.getElementById('btn_malo')
 
         malo.addEventListener("click", function() {
-        remote.getCurrentWindow().loadFile('end_valuation_brutto_malo.html')
+        remote.getCurrentWindow().loadFile('public/end_valuation_brutto_malo.html')
         });
     </script>
 
@@ -51,14 +51,14 @@
         const duzo = document.getElementById('btn_duzo')
 
         duzo.addEventListener("click", function() {
-          remote.getCurrentWindow().loadFile('end_valuation_brutto_duzo.html')
+          remote.getCurrentWindow().loadFile('public/end_valuation_brutto_duzo.html')
         });
     </script>
 
     <script>
         const fs = require('fs');
 
-        let val = fs.readFileSync('json_files/nameValuation.json', 'utf-8');
+        let val = fs.readFileSync('public/json_files/nameValuation.json', 'utf-8');
         let nameval = JSON.parse(val);
 
         let nm_val = document.getElementById('name_valutation');

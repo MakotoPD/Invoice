@@ -7,27 +7,27 @@ const math = create(all, config)
 
 //...
 
-let nameVal_data = fs.readFileSync('json_files/nameValuation.json', 'utf-8')
+let nameVal_data = fs.readFileSync('public/json_files/nameValuation.json', 'utf-8')
 let nameVal_object = JSON.parse(nameVal_data)
 
 //...
 
-let name_data = fs.readFileSync('json_files/nazwy.json', 'utf-8')
+let name_data = fs.readFileSync('public/json_files/nazwy.json', 'utf-8')
 let name_object = JSON.parse(name_data)
 
 //...
 
-let meters_data = fs.readFileSync('json_files/meters.json', 'utf-8')
+let meters_data = fs.readFileSync('public/json_files/meters.json', 'utf-8')
 let meters_object = JSON.parse(meters_data)
 
 //...
 
-let price_data = fs.readFileSync('json_files/price.json', 'utf-8')
+let price_data = fs.readFileSync('public/json_files/price.json', 'utf-8')
 let price_object = JSON.parse(price_data);
 
 //...
 
-let jm = fs.readFileSync('json_files/jm.json', 'utf-8')
+let jm = fs.readFileSync('public/json_files/jm.json', 'utf-8')
 let namejm = JSON.parse(jm)
 
 

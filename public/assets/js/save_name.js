@@ -13,7 +13,7 @@ const nameOfValuation = []
 
             nameOfValuation.push(inpu.value);
 
-            let pathToFile = path.join(__dirname, 'json_files/nameValuation.json')
+            let pathToFile = path.join(__dirname, '/json_files/nameValuation.json')
             let data = JSON.stringify((nameOfValuation));
 
             fs.writeFileSync(pathToFile, data, 'utf-8')

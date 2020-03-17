@@ -17,7 +17,7 @@ const GlobalProject = []
 
             GlobalProject.push(list_element[i].id);
 
-            let pathToFile = path.join(__dirname, 'json_files/nazwy.json')
+            let pathToFile = path.join(__dirname, '/json_files/nazwy.json')
             let data = JSON.stringify((GlobalProject));
 
             fs.writeFileSync(pathToFile, data, 'utf-8')
