@@ -26,6 +26,9 @@
     "os": "^0.1.1",
     "popmotion": "^8.7.1"
   },
+  "engines": {
+    "node": "12.x"
+  },
   "build": {
     "appId": "com.makoto.Lilith",
     "productName": "Lilith",
