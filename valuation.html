@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<!--
+#   valutaion.html
+#   Dodawanie usługi/towaru
+#
+-->
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Lilith</title>
+    <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-inline';" />
+    <link rel="stylesheet" href="assets/css/valuation.css">
+  </head>
+  <body>
+    <div class="all" style="-webkit-app-region: no-drag;">
+      <div class="header">
+        <button id="btn_back">&lt; Powrót</button>
+        <h2>NOWA WYCENA</h2>
+        <h4>Dodaj Usługi i towar do wyceny</h4>
+      </div>
+      <div class="main">
+        <input type="text" id="new_elem" required></input><button type="add" id="btn_new">Dodaj usługę/towar</button>
+        <ul id="list_ul">
+        </ul>
+        <button type="res" id="btn_reset">Reset</button>
+        <button type="submit" id="btn_generate">Dalej</button>
+      </div>
+      
+    </div>
+
+    <script>
+      const { remote } = require('electron');
+      const btn = document.querySelector('#btn_back')
+
+      btn.addEventListener("click", function() {
+        remote.getCurrentWindow().loadFile('name_valuation.html')
+      });
+    </script>
+    <script>
+      const res_btn = document.getElementById('btn_reset');
+      const ul = document.getElementsByTagName('ul');
+
+      res_btn.addEventListener('click', () => {
+        for (let i = 0; i < ul.length; i++) {
+          ul[i].innerHTML = '';
+        } 
+      });
+    </script>
+    <script>
+      
+      document.getElementById('btn_generate').addEventListener('click', () => {
+        for (let f = 0; f <= document.getElementsByTagName('li').length; f++) {
+          if (f == document.getElementsByTagName('li').length) {
+            remote.getCurrentWindow().loadFile('create_jm.html')
+          }
+        }}
+      );
+      
+    </script>
+
+    <script src="assets/js/new_list_element.js"></script>
+    <script src="assets/js/save_list.js"></script>
+  </body>
+</html>

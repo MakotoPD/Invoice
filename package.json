@@ -1,0 +1,48 @@
+{
+  "name": "lsilith",
+  "version": "1.0.0",
+  "description": "Quick valuations and cost estimates",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "packager": "electron-packager .",
+    "tt": "electron-packager . app --platform linux --arch x64 --out dist/",
+    "pack": "build --dir",
+    "dist": "build"
+  },
+  "author": "makoto <makoto.kontakt@gmail.com>",
+  "license": "Apache-2.0",
+  "devDependencies": {
+    "electron": "^8.1.1"
+  },
+  "dependencies": {
+    "cargodb": "^2.0.0",
+    "electron-builder": "^22.4.1",
+    "electron-packager": "^14.2.1",
+    "localStorage": "^1.0.4",
+    "mathjs": "^6.6.1",
+    "os": "^0.1.1",
+    "popmotion": "^8.7.1"
+  },
+  "build": {
+    "appId": "com.makoto.Lilith",
+    "productName": "Lilith",
+    "linux": {
+      "category":"Office",
+      "icon":"assets/img/icons",
+      "packageCategory":"office",
+      "maintainer": "makoto <makoto.kontakt@gmail.com>",
+      "target": [ "deb" ]
+    },
+    "deb": {
+      "depends": [
+        "gconf2",
+        "gconf-service",
+        "libnotify4",
+        "libappindicator1",
+        "libxtst6",
+        "libnss3"
+      ]
+    }
+  }
+}

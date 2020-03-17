@@ -1,0 +1,114 @@
+* {
+  outline: none;
+}
+
+body::-webkit-scrollbar {
+  width: 11px;
+}
+
+body {
+  scrollbar-width: thin;
+  scrollbar-color: #444;
+}
+
+body::-webkit-scrollbar-track {
+  background: #333333;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #444;
+  border-radius: 5px;
+  border: 3px solid #444;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Helvetica, sans-serif;
+  overflow-x: hidden;
+  overflow-y: auto;
+  background-color: white;
+}
+
+.all {
+  width: 100vw;
+  height: 100%;
+  text-align: center;
+}
+.all #btn_back {
+  width: 70px;
+  height: 30px;
+  font-size: 20px;
+  position: fixed;
+  left: 20px;
+  top: 20px;
+  border: none;
+  border-radius: 10px;
+  background-color: #ccc;
+  box-shadow: 0px 3px 10px 2px #55555563;
+  transition: 0.1s;
+}
+.all #btn_back:hover {
+  transform: scale(1.05);
+}
+.all #btn_back:active {
+  transform: scale(0.95);
+}
+.all #print-pdf {
+  width: 70px;
+  height: 30px;
+  font-size: 20px;
+  position: fixed;
+  right: 20px;
+  top: 20px;
+  border: none;
+  border-radius: 10px;
+  background-color: #ccc;
+  box-shadow: 0px 3px 10px 2px #55555563;
+  transition: 0.1s;
+}
+.all #print-pdf:hover {
+  transform: scale(1.05);
+}
+.all #print-pdf:active {
+  transform: scale(0.95);
+}
+.all table {
+  border: 0;
+  border-collapse: collapse;
+  margin: 20px auto;
+  padding: 0;
+}
+.all table .names td {
+  padding: 5px 15px;
+}
+.all table #name_val {
+  font-size: 24px;
+  font-weight: bold;
+}
+.all table .name_, .all table .meters_, .all table .price_, .all table .sum_ {
+  position: relative;
+}
+.all table .inp2, .all table .sum_element, .all table .sum_element_brutto, .all table .p1 {
+  display: inline-block;
+  margin: 5px 0px;
+}
+.all table .inp3, .all table .p2 {
+  margin: 0;
+  display: inline-block;
+}
+.all table .empty_td {
+  border: 0;
+}
+.all table .pp, .all table .cena {
+  display: inline-block;
+}
+.all table .suma, .all table .txt {
+  font-weight: bold;
+}
+.all table .name_ {
+  font-weight: bold;
+}
+.all td {
+  border: 1px solid #000;
+}

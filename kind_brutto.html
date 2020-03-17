@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<!--
+#   kond_brutto.html
+#   Wybór cen
+#
+-->
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Lilith</title>
+    <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-inline';" />
+    <link rel="stylesheet" href="assets/css/type_valuation.css">
+  </head>
+  <body>
+    <div class="all" style="-webkit-app-region: no-drag;">
+        <div class="header">
+            <button id="btn_back">&lt; Powrót</button>
+            <h2 id="name_valutation"></h2>
+            <h4 id="type_valuation">Wybierz typ wyceny</h4>
+        </div>
+        <div class="main">
+            <div id="container">
+                <button id="btn_malo" class="btn">8%</button>
+                <button id="btn_duzo" class="btn">23%</button>
+
+            </div>
+
+        </div>
+      
+    </div>
+
+
+    <script>
+        const { remote } = require('electron');
+        const btn = document.querySelector('#btn_back')
+  
+        btn.addEventListener("click", function() {
+          remote.getCurrentWindow().loadFile('price_list.html')
+        });
+    </script>
+
+    <script>
+         const malo = document.getElementById('btn_malo')
+
+        malo.addEventListener("click", function() {
+        remote.getCurrentWindow().loadFile('end_valuation_brutto_malo.html')
+        });
+    </script>
+
+    <script>
+        const duzo = document.getElementById('btn_duzo')
+
+        duzo.addEventListener("click", function() {
+          remote.getCurrentWindow().loadFile('end_valuation_brutto_duzo.html')
+        });
+    </script>
+
+    <script>
+        const fs = require('fs');
+
+        let val = fs.readFileSync('json_files/nameValuation.json', 'utf-8');
+        let nameval = JSON.parse(val);
+
+        let nm_val = document.getElementById('name_valutation');
+
+        nm_val.append(nameval[0]);
+    </script>
+    </body>
+</html>

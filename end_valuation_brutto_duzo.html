@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<!--
+#   end_valuation_brutto_duzo.html
+#   Potwierdzenie i eksport do PDF
+#
+-->
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Lilith</title>
+        <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-inline';" />
+        <link rel="stylesheet" href="assets/css/end_valuation_brutto.css">
+    </head>
+    <body>
+        <div  class="all" style="-webkit-app-region: no-drag;">
+            <div id="btn_cont">
+                <button id="print-pdf">Print</button>
+                <button id="btn_back">Back</button>
+            </div>
+            <table id="table_">
+                <tr>
+                    <td id="name_val" colspan="5"></td>
+                </tr>
+                <tr class="names">
+                    <td>Nazwa usługi</td><td>Cena netto za jm.</td><td>Ilość</td><td>Cena netto</td><td>Cena brutto</td>
+                </tr>
+            </table>
+
+            <label id="pdf-path"></label>
+        
+        </div>
+    </body>
+
+    <script>
+        const { remote } = require('electron');
+        const btn = document.querySelector('#btn_back')
+  
+        btn.addEventListener("click", function() {
+          remote.getCurrentWindow().loadFile('kind_brutto.html')
+        });
+    </script>
+
+    <script src="assets/js/render-pdf_brutto.js"></script>
+    <script src="assets/js/load_endTable_brutto_duzo.js"></script>
+</html>

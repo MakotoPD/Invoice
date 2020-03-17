@@ -1,0 +1,87 @@
+* {
+  outline: none;
+}
+
+body::-webkit-scrollbar {
+  width: 11px;
+}
+
+body {
+  scrollbar-width: thin;
+  scrollbar-color: #444;
+}
+
+body::-webkit-scrollbar-track {
+  background: #333333;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #444;
+  border-radius: 5px;
+  border: 3px solid #444;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Helvetica, sans-serif;
+}
+
+.all {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(31, 31, 31, 0.9);
+  overflow: hidden;
+}
+.all .header {
+  width: 100%;
+  height: 100px;
+  text-align: center;
+}
+.all .header #hellow {
+  margin: 0;
+  padding: 0;
+  color: #b6b6b6;
+  opacity: 0;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  cursor: default;
+}
+.all .header #program_name {
+  margin: 0;
+  padding: 0;
+  opacity: 0;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  cursor: default;
+}
+.all .main {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+.all .main button {
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 150px;
+  height: 40px;
+  border: none;
+  border-radius: 15px;
+  background-color: #bbb;
+  opacity: 0;
+  transition: 0.1s;
+  cursor: pointer;
+}
+.all .main button:hover {
+  background-color: #999;
+  transform: translate(-50%, -50%) scale(1.05);
+}
+.all .main button:active {
+  transform: translate(-50%, -50%) scale(0.95);
+}

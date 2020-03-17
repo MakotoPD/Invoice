@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<!--
+#   index.html
+#   Index
+#
+-->
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Lilith</title>
+    <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-inline';" />
+    <link rel="stylesheet" href="assets/css/index.css">
+
+  </head>
+  <body>
+    <div class="all" style="-webkit-app-region: no-drag;">
+      <div class="header">
+        <h3 id="hellow">Witaj w</h3>
+        <img src="assets/img/icons/icon128.png" id="program_name">
+      </div>
+      <div class="main">
+        <button id="btn_valuation">Nowa wycena</button>
+
+      </div>
+    </div>
+
+    <script>
+      const { remote } = require('electron');
+      const btn = document.querySelector('#btn_valuation')
+
+      btn.addEventListener("click", function() {
+          remote.getCurrentWindow().loadFile('name_valuation.html')
+      });
+    </script>
+    <script src="assets/js/animations.js"></script>
+  </body>
+</html>
