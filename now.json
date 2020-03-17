@@ -15,11 +15,11 @@
     ],
     "routes": [
         { 
-            "src": "/public/.*",
+            "src": "/public/(.*)",
             "dest": "/main.js"
         },
         {
-            "src": "/.*",
+            "src": "/(.*)",
             "dest": "/main.js"
         }
     ]
