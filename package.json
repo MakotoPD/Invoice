@@ -17,6 +17,7 @@
     "minimist": "^1.2.5"
   },
   "dependencies": {
+    "browserify": "^16.5.0",
     "cargodb": "^2.0.0",
     "electron-builder": "^22.4.1",
     "electron-packager": "^14.2.1",
