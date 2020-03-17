@@ -1,4 +1,5 @@
 const { tween, styler, delay, chain} = require('popmotion');
+import { tween, styler, delay, chain} from 'popmotion'
 
 const hellow = document.querySelector('#hellow');
 const program_name = document.querySelector('#program_name');
