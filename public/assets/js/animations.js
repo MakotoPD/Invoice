@@ -54,7 +54,7 @@ chain(
         })
     ).start(anim_hellow.set),
     chain(
-        delay(3000),
+        delay(3050),
         tween({
             from: {
                 top: '50%',

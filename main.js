@@ -13,7 +13,11 @@ function createWindow () {
       nodeIntegration: true,
       nativeWindowOpen: true,
     },
-    icon: __dirname +'/public/assets/img/icons/icon64.png'
+    "mac": {
+      "icon": "public/assets/img/icons/icon64.icns",
+      "category": "public.app-category.utilities"
+    },
+    icon: __dirname +'public/assets/img/icons/icon64.png'
   })
   
   win.loadFile('public/index.html') 
@@ -30,11 +34,15 @@ function createWindow () {
       webPreferences: {
         nodeIntegration: true
       },
-      icon: __dirname +'/public/assets/img/icons/icon64.png'
+      "mac": {
+        "icon": "public/assets/img/icons/icon64.icns",
+        "category": "public.app-category.utilities"
+      },
+      icon: __dirname +'public/assets/img/icons/icon64.png'
     })
 
 
-    about_win.loadFile('/public/about_program.html')
+    about_win.loadFile('public/about_program.html')
 
 }
 
