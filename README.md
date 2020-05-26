@@ -12,4 +12,4 @@
 1. install node modules
 	`npm i`
 2. Run program
-	`npm run start`
+	`npm run start` or `electron .`
