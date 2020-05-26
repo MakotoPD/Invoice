@@ -56,14 +56,15 @@
     </script>
 
     <script>
-        const fs = require('fs');
+      const Store = require('electron-store');
 
-        let val = fs.readFileSync('public/json_files/nameValuation.json', 'utf-8');
-        let nameval = JSON.parse(val);
+      const store = new Store({accessPropertiesByDotNotation: true});
+
+        let nameval = store.get('name_val');
 
         let nm_val = document.getElementById('name_valutation');
 
-        nm_val.append(nameval[0]);
+        nm_val.append(nameval);
     </script>
     </body>
 </html>

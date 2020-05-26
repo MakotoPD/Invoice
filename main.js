@@ -1,5 +1,6 @@
-const { app, BrowserWindow, Menu } = require('electron')
+const { app, BrowserWindow, Menu, electron } = require('electron')
 const shell = require('electron').shell
+let path = require('path')
 
 
 function createWindow () {
@@ -14,13 +15,14 @@ function createWindow () {
       nativeWindowOpen: true,
     },
     "mac": {
-      "icon": "public/assets/img/icons/icon64.icns",
-      "category": "public.app-category.utilities"
+      icon: path.join(__dirname, '/public/assets/img/icons/icon128.png'),
+      category: 'public.app-category.utilities'
     },
-    icon: __dirname +'public/assets/img/icons/icon64.png'
+    icon: path.join(__dirname, '/public/assets/img/icons/icon64.png')
   })
   
   win.loadFile('public/index.html') 
+  win.webContents.openDevTools()
 
   function createAboutWindow () {
     const about_win = new BrowserWindow({
@@ -35,10 +37,10 @@ function createWindow () {
         nodeIntegration: true
       },
       "mac": {
-        "icon": "public/assets/img/icons/icon64.icns",
-        "category": "public.app-category.utilities"
+        icon: path.join(__dirname, '/public/assets/img/icons/icon128.png'),
+        category: 'public.app-category.utilities'
       },
-      icon: __dirname +'public/assets/img/icons/icon64.png'
+      icon: path.join(__dirname, '/public/assets/img/icons/icon64.png')
     })
 
 

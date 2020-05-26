@@ -11,11 +11,9 @@ btn_next.addEventListener('click', () =>{
 
         Meters_List.push(inp2_elem[i].value);
 
-        let meters = path.join(__dirname, '/json_files/meters.json');
-        let meters_data = JSON.stringify((Meters_List));
-
-        fs.writeFileSync(meters, meters_data, 'utf-8');
     };
+
+    store.set('meters', Meters_List)
 
     console.log('Meters: ', Meters_List);
 
@@ -24,11 +22,9 @@ btn_next.addEventListener('click', () =>{
 
         Price_List.push(inp3_elem[i].value);
 
-        let price = path.join(__dirname, '/json_files/price.json');
-        let price_data = JSON.stringify((Price_List));
-
-        fs.writeFileSync(price, price_data, 'utf-8');
     };
+
+    store.set('price', Price_List)
 
     console.log('Price: ', Price_List);
 });

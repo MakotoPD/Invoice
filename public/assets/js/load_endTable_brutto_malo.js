@@ -1,35 +1,30 @@
-const fs = require('fs');
-const path = require('path');
 const { create, all} = require('mathjs')
+const Store = require('electron-store');
+
+const store = new Store({accessPropertiesByDotNotation: true});
 
 const config = { }
 const math = create(all, config)
 
 //...
 
-let nameVal_data = fs.readFileSync('public/json_files/nameValuation.json', 'utf-8')
-let nameVal_object = JSON.parse(nameVal_data)
+let nameVal_object = store.get('name_val')
 
 //...
 
-let name_data = fs.readFileSync('public/json_files/nazwy.json', 'utf-8')
-let name_object = JSON.parse(name_data)
+let name_object = store.get('el_list')
 
 //...
 
-let meters_data = fs.readFileSync('public/json_files/meters.json', 'utf-8')
-let meters_object = JSON.parse(meters_data)
+let meters_object = store.get('meters')
 
 //...
 
-let price_data = fs.readFileSync('public/json_files/price.json', 'utf-8')
-let price_object = JSON.parse(price_data);
+let price_object = store.get('price')
 
 //...
 
-let jm = fs.readFileSync('public/json_files/jm.json', 'utf-8')
-let namejm = JSON.parse(jm)
-
+let namejm = store.get('jm')
 
 //...
 

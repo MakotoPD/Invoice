@@ -1,13 +1,11 @@
-const fs = require('fs');
-const path = require('path');
+const Store = require('electron-store');
+
+const store = new Store({accessPropertiesByDotNotation: true});
 
 let gen_btn = document.getElementById('btn_generate');
 let list_element = document.getElementsByTagName('li');
 
-
-
-
-const GlobalProject = []
+let lista = []
 
     gen_btn.addEventListener('click', () =>{
         for (let i = 0; i < list_element.length; i++) {
@@ -15,11 +13,7 @@ const GlobalProject = []
             list_element[i].innerHTML = list_element[i].innerText;
             list_element[i].setAttribute("id", list_element[i].innerHTML);
 
-            GlobalProject.push(list_element[i].id);
-
-            let pathToFile = path.join(__dirname, '/json_files/nazwy.json')
-            let data = JSON.stringify((GlobalProject));
-
-            fs.writeFileSync(pathToFile, data, 'utf-8')
+            lista.push(list_element[i].id);
         };
+        store.set('el_list', lista)
     });

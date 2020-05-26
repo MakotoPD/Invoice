@@ -1,24 +1,22 @@
-const fs = require('fs');
-const path = require('path');
 
-let data = fs.readFileSync('public/json_files/nazwy.json', 'utf-8');
-let object = JSON.parse(data);
+const Store = require('electron-store');
 
+const store = new Store({accessPropertiesByDotNotation: false});
 
-let val = fs.readFileSync('public/json_files/nameValuation.json', 'utf-8');
-let nameval = JSON.parse(val);
+let object = store.get('el_list');
+
+let nameval =  store.get('name_val');
 
 let nm_val = document.getElementById('name_valutation');
 
-nm_val.append(nameval[0]);
+nm_val.append(nameval);
 
 
-let jm = fs.readFileSync('public/json_files/jm.json', 'utf-8');
-let namejm = JSON.parse(jm);
+let namejm = store.get('jm');
 
 
 
-for (let i = 0; i < object.length; i++) {
+for (let i = 0; i < object.length ; i++) {
     
     let table = document.getElementById('table_');
 
@@ -68,8 +66,8 @@ for (let i = 0; i < object.length; i++) {
     t_d2.appendChild(p1);
     t_d3.appendChild(p2);
 
-    p1.append('zł')
-    p2.append(namejm[i])
+    p1.append('zł');
+    p2.append(namejm[i]);
 
     //...
 
