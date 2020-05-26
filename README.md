@@ -13,5 +13,3 @@
 	`npm i`
 2. Run program
 	`npm run start`
-
-![](https://img.shields.io/github/languages/code-size/MakotoDesigner/Lilith?style=for-the-badge)
