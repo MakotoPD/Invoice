@@ -6,7 +6,7 @@
 	<hr>
 	<p>(Program under development)</p>
 	<hr>
-	<p>If you want to test the program, follow the instructions</p>
+	<p>If you want to test the program, follow the instructions or download the mac version</p>
 </div>
 
 1. install node modules
