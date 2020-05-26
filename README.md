@@ -9,11 +9,9 @@
 	<p>If you want to test the program, follow the instructions</p>
 </div>
 
- 1. install node modules
-	`npm install`
-2. Install electron
-	`npm i electron`
-3. Run program
+1. install node modules
+	`npm i`
+2. Run program
 	`npm run start`
 
 ![](https://img.shields.io/github/languages/code-size/MakotoDesigner/Lilith?style=for-the-badge)
