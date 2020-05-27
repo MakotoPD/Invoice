@@ -1,8 +1,8 @@
 
 <div align="center">    
 	<img src="https://raw.githubusercontent.com/MakotoDesigner/Lilith/master/public/assets/img/Lilith_logo.png" width="40%">
-	<h1>🔥 Lilith 🔥</h1>
-	<h4>Lilith is program for calculating cost estimates and valuations.</h4>
+	<h1>🔥 Inv 🔥</h1>
+	<h4>Inv is program for calculating cost estimates and valuations.</h4>
 	<hr>
 	<p>(Program under development)</p>
 	<h4>Open beta</h4>

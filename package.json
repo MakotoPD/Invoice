@@ -1,11 +1,11 @@
 {
-  "name": "lilith",
+  "name": "invoice",
   "version": "1.0.0",
   "description": "Quick valuations and cost estimates",
   "main": "main.js",
   "scripts": {
     "start": "electron .",
-    "build-mac": "electron-packager . --overwrite --platform=darwin --arch=x64 --icon=public/assets/img/icons/icon64.icns --prune=true --out=release-builds",
+    "build-mac": "electron-packager . --overwrite --platform=darwin --arch=x64 --icon=public/assets/img/icons/icon128.icns --prune=true --out=release-builds",
     "build-win": "electron-packager . --overwrite --platform=win32 --arch=x86_64 --icon=public/assets/img/icons/icon64.ico --prune=true --out=release-builds",
     "build-lin": "electron-packager . --overwrite --platform=linux --arch=x64 --icon=public/assets/img/icons/icon64.png --prune=true --out=release-builds",
     "dist": "build"
@@ -31,8 +31,8 @@
     "node": "12.x"
   },
   "build": {
-    "appId": "com.makoto.Lilith",
-    "productName": "Lilith",
+    "appId": "com.makoto.Inv",
+    "productName": "Inv",
     "linux": {
       "category": "Office",
       "icon": "assets/img/icons",

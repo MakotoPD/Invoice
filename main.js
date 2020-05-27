@@ -15,7 +15,7 @@ function createWindow () {
       nativeWindowOpen: true,
     },
     "mac": {
-      icon: path.join(__dirname, '/public/assets/img/icons/icon128.png'),
+      icon: path.join(__dirname, '/public/assets/img/icons/icon128.icns'),
       category: 'public.app-category.utilities'
     },
     icon: path.join(__dirname, '/public/assets/img/icons/icon64.png')

@@ -48,7 +48,7 @@ chain(
                 top: '40%',
             },
             to: {
-                top: '3px',
+                top: '6px',
             },
             duration: 1000,
         })
