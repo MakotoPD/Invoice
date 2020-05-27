@@ -1,6 +1,6 @@
 
 <div align="center">    
-	<img src="https://raw.githubusercontent.com/MakotoDesigner/Lilith/master/public/assets/img/Lilith_logo.png" width="40%">
+	<img src="https://raw.githubusercontent.com/MakotoPD/Invoice/master/public/assets/img/logo_all.png" width="40%">
 	<h1>🔥 Invoice 🔥</h1>
 	<h4>Invoice is program for calculating cost estimates and valuations.</h4>
 	<hr>
