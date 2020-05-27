@@ -5,6 +5,7 @@
 	<h4>Lilith is program for calculating cost estimates and valuations.</h4>
 	<hr>
 	<p>(Program under development)</p>
+	<h4>Open beta</h4>
 	<hr>
 	<p>If you want to test the program, follow the instructions or download the mac version</p>
 </div>
