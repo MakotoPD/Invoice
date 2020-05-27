@@ -19,7 +19,7 @@
   },
   "dependencies": {
     "browserify": "^16.5.0",
-    "cargodb": "^2.0.0",
+    "cargodb": "^2.2.0",
     "electron-builder": "^22.4.1",
     "electron-store": "^5.1.1",
     "localStorage": "^1.0.4",
