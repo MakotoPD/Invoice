@@ -19,7 +19,7 @@
   },
   "dependencies": {
     "browserify": "^16.5.0",
-    "cargodb": "^2.2.0",
+    "cargodb": "^3.0.2",
     "electron-builder": "^22.4.1",
     "electron-store": "^5.1.1",
     "localStorage": "^1.0.4",
@@ -32,7 +32,7 @@
   },
   "build": {
     "appId": "com.makoto.Inv",
-    "productName": "Inv",
+    "productName": "Invoice",
     "linux": {
       "category": "Office",
       "icon": "assets/img/icons",

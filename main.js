@@ -10,7 +10,7 @@ function createWindow () {
     height: 600,
     minHeight: 500,
     hasShadow: true,
-    backgroundColor: '#333333',
+    backgroundColor: '#fff',
     webPreferences: {
       nodeIntegration: true,
       nativeWindowOpen: true,
@@ -34,7 +34,7 @@ function createWindow () {
       transparent: false,
       maximizable: false,
       hasShadow: true,
-      backgroundColor: '#333333',
+      backgroundColor: '#333',
       webPreferences: {
         nodeIntegration: true
       },
