@@ -1,7 +1,7 @@
 const { tween, styler, delay, chain} = require('popmotion');
 
 const hellow = document.querySelector('#hellow');
-const program_name = document.querySelector('#program_name');
+const program_name = document.querySelector('#program_logo');
 const btn_valuation = document.querySelector('#btn_valuation');
 
 const anim_hellow = styler(hellow);

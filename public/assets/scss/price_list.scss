@@ -25,7 +25,7 @@ body{
     font-family: Helvetica, sans-serif;
     overflow-x: hidden;
     overflow-y: scroll;
-    background-color: rgba(31, 31, 31, 0.9);
+    background-color: white;
 }
 .all {
     width: 100vw;
@@ -41,37 +41,35 @@ body{
             margin: 10px;
             border: none;
             border-radius: 10px;
-            background-color: #bbb;
+            background-color: #e24076;
+            color: white;
             position: fixed;
             top: 10px;
             left: 10px;
             cursor: pointer;
-
-            &:hover{
-                background-color: #999;
-                transform: scale(1.05);
-            }
-
-            &:active{
-                transform: scale(.95);
-            }
+        }
+        #btn_back:hover{
+            background-color: #d44065;
+            transform: scale(1.05);
+        }
+        #btn_back:active{
+            transform: scale(.95);
         }
 
         #btn_next{
             margin: 10px;
             border: none;
             border-radius: 10px;
-            background-color: #bbb;
+            background-color: #e24076;
+            color: white;
             position: fixed;
             top: 10px;
             right: 10px;
             cursor: pointer;
-
             &:hover{
-                background-color: #999;
+                background-color: #d44065;
                 transform: scale(1.05);
             }
-
             &:active{
                 transform: scale(.95);
             }
@@ -81,7 +79,7 @@ body{
         h2{
             padding-top: 40px;
             margin-bottom: 0;
-            color: #fff;
+            color: black;
             letter-spacing: 5px;
             cursor: default;
             max-width: 90%;
@@ -91,7 +89,7 @@ body{
         h4{
             padding-top: 10px;
             margin-top: 0;
-            color: #aaa;
+            color: #444;
             letter-spacing: 5px;
             cursor: default;
         }
@@ -123,7 +121,7 @@ body{
                     height: auto;
                     padding: 5px 10px;
                     border: 1px solid #666;
-                    color: #fff;
+                    color: #333;
                     border-radius: 8px;
                     cursor: default;
                 }
@@ -134,7 +132,7 @@ body{
                     .inp2{
                         border: 0;
                         border-radius: 5px;
-                        color:#fff;
+                        color:black;
                         background-color: #00000000;
                         text-align: center;
                         height: 20px;
@@ -147,11 +145,11 @@ body{
                         }
 
                         &:hover{
-                            background-color: #aaaaaa13;
+                            background-color: #3534341f;
                         }
 
                         &:focus{
-                            background-color: #aaaaaa46;
+                            background-color: #0000002d;
                         }
                     }
 
@@ -159,7 +157,7 @@ body{
                         margin: 0;
                         width: 15%;
                         display: inline-block;
-                        color: #ccc;
+                        color: #666;
                         cursor: default;
                     }
                 }
@@ -169,11 +167,11 @@ body{
                     .inp3{
                         border: 0;
                         border-radius: 5px;
-                        color:#fff;
+                        color:black;
                         background-color: #00000000;
                         text-align: center;
                         height: 20px;
-                        width: 80%;
+                        width: auto;
                         display: inline-block;
 
                         &::placeholder{
@@ -182,19 +180,19 @@ body{
                         }
 
                         &:hover{
-                            background-color: #aaaaaa13;
+                            background-color: #3534341f;
                         }
 
                         &:focus{
-                            background-color: #aaaaaa46;
+                            background-color: #0000002d;
                         }
                     }
 
                     p{
                         margin: 0;
-                        width: 15%;
+                        width: auto;
                         display: inline-block;
-                        color: #ccc;
+                        color: #666;
                         cursor: default;
                     }
                 }

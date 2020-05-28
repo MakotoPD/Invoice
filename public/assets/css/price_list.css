@@ -27,7 +27,7 @@ body {
   font-family: Helvetica, sans-serif;
   overflow-x: hidden;
   overflow-y: scroll;
-  background-color: rgba(31, 31, 31, 0.9);
+  background-color: white;
 }
 
 .all {
@@ -43,14 +43,15 @@ body {
   margin: 10px;
   border: none;
   border-radius: 10px;
-  background-color: #bbb;
+  background-color: #e24076;
+  color: white;
   position: fixed;
   top: 10px;
   left: 10px;
   cursor: pointer;
 }
 .all .header #btn_back:hover {
-  background-color: #999;
+  background-color: #d44065;
   transform: scale(1.05);
 }
 .all .header #btn_back:active {
@@ -60,14 +61,15 @@ body {
   margin: 10px;
   border: none;
   border-radius: 10px;
-  background-color: #bbb;
+  background-color: #e24076;
+  color: white;
   position: fixed;
   top: 10px;
   right: 10px;
   cursor: pointer;
 }
 .all .header #btn_next:hover {
-  background-color: #999;
+  background-color: #d44065;
   transform: scale(1.05);
 }
 .all .header #btn_next:active {
@@ -76,7 +78,7 @@ body {
 .all .header h2 {
   padding-top: 40px;
   margin-bottom: 0;
-  color: #fff;
+  color: black;
   letter-spacing: 5px;
   cursor: default;
   max-width: 90%;
@@ -85,7 +87,7 @@ body {
 .all .header h4 {
   padding-top: 10px;
   margin-top: 0;
-  color: #aaa;
+  color: #444;
   letter-spacing: 5px;
   cursor: default;
 }
@@ -114,7 +116,7 @@ body {
   height: auto;
   padding: 5px 10px;
   border: 1px solid #666;
-  color: #fff;
+  color: #333;
   border-radius: 8px;
   cursor: default;
 }
@@ -124,28 +126,32 @@ body {
 .all .main #container table .meters_ .inp2 {
   border: 0;
   border-radius: 5px;
-  color: #fff;
+  color: black;
   background-color: #00000000;
   text-align: center;
   height: 20px;
   width: 80%;
   display: inline-block;
 }
+.all .main #container table .meters_ .inp2::-ms-input-placeholder {
+  color: #aaa;
+  text-align: center;
+}
 .all .main #container table .meters_ .inp2::placeholder {
   color: #aaa;
   text-align: center;
 }
 .all .main #container table .meters_ .inp2:hover {
-  background-color: #aaaaaa13;
+  background-color: #3534341f;
 }
 .all .main #container table .meters_ .inp2:focus {
-  background-color: #aaaaaa46;
+  background-color: #0000002d;
 }
 .all .main #container table .meters_ p {
   margin: 0;
   width: 15%;
   display: inline-block;
-  color: #ccc;
+  color: #666;
   cursor: default;
 }
 .all .main #container table .price_ {
@@ -154,28 +160,32 @@ body {
 .all .main #container table .price_ .inp3 {
   border: 0;
   border-radius: 5px;
-  color: #fff;
+  color: black;
   background-color: #00000000;
   text-align: center;
   height: 20px;
-  width: 80%;
+  width: auto;
   display: inline-block;
+}
+.all .main #container table .price_ .inp3::-ms-input-placeholder {
+  color: #aaa;
+  text-align: center;
 }
 .all .main #container table .price_ .inp3::placeholder {
   color: #aaa;
   text-align: center;
 }
 .all .main #container table .price_ .inp3:hover {
-  background-color: #aaaaaa13;
+  background-color: #3534341f;
 }
 .all .main #container table .price_ .inp3:focus {
-  background-color: #aaaaaa46;
+  background-color: #0000002d;
 }
 .all .main #container table .price_ p {
   margin: 0;
-  width: 15%;
+  width: auto;
   display: inline-block;
-  color: #ccc;
+  color: #666;
   cursor: default;
 }
 

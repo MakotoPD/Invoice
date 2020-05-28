@@ -27,7 +27,7 @@ body {
   font-family: Helvetica, sans-serif;
   overflow-x: hidden;
   overflow-y: scroll;
-  background-color: rgba(31, 31, 31, 0.9);
+  background-color: white;
 }
 
 .all {
@@ -43,14 +43,15 @@ body {
   margin: 10px;
   border: none;
   border-radius: 10px;
-  background-color: #bbb;
+  background-color: #e24076;
+  color: white;
   position: fixed;
   top: 10px;
   left: 10px;
   cursor: pointer;
 }
 .all .header #btn_back:hover {
-  background-color: #999;
+  background-color: #d44065;
   transform: scale(1.05);
 }
 .all .header #btn_back:active {
@@ -59,7 +60,7 @@ body {
 .all .header h2 {
   padding-top: 40px;
   margin-bottom: 0;
-  color: #fff;
+  color: black;
   letter-spacing: 5px;
   cursor: default;
   max-width: 90%;
@@ -68,7 +69,7 @@ body {
 .all .header h4 {
   padding-top: 10px;
   margin-top: 0;
-  color: #aaa;
+  color: #333;
   letter-spacing: 5px;
   cursor: default;
 }
@@ -92,19 +93,18 @@ body {
   font-weight: 600;
   border: none;
   border-radius: 15px;
-  background-color: #999;
-  color: #111;
+  background-color: #e24076;
+  color: white;
   position: relative;
   top: 50px;
   transition: 0.1s;
 }
 .all .main #container .btn:hover {
   transform: scale(1.05);
-  background-color: #aaa;
+  background-color: #d44065;
 }
 .all .main #container .btn:active {
   transform: scale(0.95);
-  background-color: #888;
 }
 .all .main #container #btn_netto {
   right: 50px;

@@ -24,30 +24,31 @@ body{
     font-family: Helvetica, sans-serif;
     overflow-x: hidden;
     overflow-y: scroll;
-    background-color: rgba(31, 31, 31, 0.9);
+    background-color: #ffffff;
 }
 .all {
     width: 100vw;
-    height: 100%;
-    
+    height: 100vh;
+
     .header{
         width: 100%;
         height: 100px;
         text-align: center;
 
-
         #btn_back{
             margin: 10px;
             border: none;
             border-radius: 10px;
-            background-color: #bbb;
+            background-color: #e24076;
+            color: white;
             position: fixed;
             top: 10px;
             left: 10px;
+            cursor: pointer;
         }
 
         #btn_back:hover{
-            background-color: #999;
+            background-color: #d44065;
             transform: scale(1.05);
         }
         #btn_back:active{
@@ -57,14 +58,14 @@ body{
         h2{
             padding-top: 20px;
             margin-bottom: 0;
-            color: #fff;
+            color: #111;
             letter-spacing: 5px;
         }
 
         h4{
             padding-top: 10px;
             margin-top: 0;
-            color: #aaa;
+            color: #444;
             letter-spacing: 5px;
         }
 
@@ -79,14 +80,14 @@ body{
         #new_elem{
             width: 170px;
             height: 20px;
-            border: 1px solid #999;
-            background-color: #0000001e;
+            border: 1px solid rgb(236, 116, 172);
+            background-color: #ffffff1e;
             border-radius: 8px;
-            color:#fff;
+            color:#000;
             text-align: center;
 
             &::placeholder{
-                color:#8b8b8b;
+                color:#111;
                 text-align: center;
             }
         }
@@ -98,11 +99,12 @@ body{
             margin-left: 5px;
             border: none;
             border-radius: 10px;
-            background-color: #aaa;
+            background-color: #e24076;
+            color: white;
             transition: .1s;
 
             &:hover{
-                background-color: #999;
+                background-color: #d44065;
                 transform: scale(1.02);
             }
 
@@ -127,6 +129,7 @@ body{
                 color: #fff;
                 list-style: none;
                 position: relative;
+                box-shadow: 0px 2px 10px -4px rgb(51, 24, 45);
 
                 .close {
                     position: absolute;
@@ -146,11 +149,13 @@ body{
             margin-right: 10px;
             border: none;
             border-radius: 15px;
-            background-color: #aaa;
+            background-color: #e24076;
+            color: white;
+            font-size: 18px;
             transition: .1s;
 
             &:hover{
-                background-color: #999;
+                background-color: #d44065;
                 transform: scale(1.05);
             }
 
@@ -166,11 +171,13 @@ body{
             margin-left: 10px;
             border: none;
             border-radius: 15px;
-            background-color: #aaa;
+            background-color: #e24076;
+            color: white;
+            font-size: 18px;
             transition: .1s;
 
             &:hover{
-                background-color: #999;
+                background-color: #d44065;
                 transform: scale(1.05);
             }
 

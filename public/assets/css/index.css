@@ -30,7 +30,7 @@ body {
 .all {
   width: 100vw;
   height: 100vh;
-  background-color: rgba(31, 31, 31, 0.9);
+  background-color: #ffffff;
   overflow: hidden;
 }
 .all .header {
@@ -41,7 +41,7 @@ body {
 .all .header #hellow {
   margin: 0;
   padding: 0;
-  color: #b6b6b6;
+  color: #222222;
   opacity: 0;
   position: absolute;
   transform: translate(-50%, -50%);
@@ -49,7 +49,7 @@ body {
   left: 50%;
   cursor: default;
 }
-.all .header #program_name {
+.all .header #program_logo {
   margin: 0;
   padding: 0;
   opacity: 0;
@@ -74,13 +74,15 @@ body {
   height: 40px;
   border: none;
   border-radius: 15px;
-  background-color: #bbb;
+  background-color: #e24076;
   opacity: 0;
   transition: 0.1s;
+  font-size: 18px;
+  color: #fff;
   cursor: pointer;
 }
 .all .main button:hover {
-  background-color: #999;
+  background-color: #d44065;
   transform: translate(-50%, -50%) scale(1.05);
 }
 .all .main button:active {

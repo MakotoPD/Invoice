@@ -30,7 +30,7 @@ body {
 .all {
   width: 100vw;
   height: 100vh;
-  background-color: rgba(31, 31, 31, 0.9);
+  background-color: #ffffff;
   overflow: hidden;
 }
 .all .header {
@@ -42,14 +42,15 @@ body {
   margin: 10px;
   border: none;
   border-radius: 10px;
-  background-color: #bbb;
+  background-color: #e24076;
+  color: white;
   position: fixed;
   top: 10px;
   left: 10px;
   cursor: pointer;
 }
 .all .header #btn_back:hover {
-  background-color: #999;
+  background-color: #d44065;
   transform: scale(1.05);
 }
 .all .header #btn_back:active {
@@ -64,7 +65,7 @@ body {
   margin: 0;
   padding: 0;
   width: 100vw;
-  color: white;
+  color: #3a3a3a;
   font-family: sans-serif;
   font-weight: 900;
   text-transform: uppercase;
@@ -84,7 +85,7 @@ body {
   border-radius: 10px;
   background-color: transparent;
   text-align: center;
-  color: #fff;
+  color: black;
   font-size: 20px;
 }
 .all .main button {
@@ -93,11 +94,14 @@ body {
   height: 40px;
   border: none;
   border-radius: 15px;
-  background-color: #bbb;
+  background-color: #e24076;
+  color: white;
+  font-size: 18px;
+  font-weight: 700;
   transition: 0.1s;
 }
 .all .main button:hover {
-  background-color: #999;
+  background-color: #d44065;
   transform: scale(1.05);
 }
 .all .main button:active {
