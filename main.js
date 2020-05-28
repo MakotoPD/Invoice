@@ -23,7 +23,7 @@ function createWindow () {
   })
   
   win.loadFile('public/index.html') 
-  win.webContents.openDevTools()
+  /*win.webContents.openDevTools()*/
 
   function createAboutWindow () {
     const about_win = new BrowserWindow({
