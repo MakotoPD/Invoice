@@ -1,7 +1,11 @@
 {
   "name": "invoice",
-  "version": "1.0.0",
+  "version": "0.2.0",
   "description": "Quick valuations and cost estimates",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/MakotoPD/Invoice.git"
+  },
   "main": "main.js",
   "scripts": {
     "start": "electron .",
@@ -35,7 +39,7 @@
     "productName": "Invoice",
     "linux": {
       "category": "Office",
-      "icon": "assets/img/icons",
+      "icon": "public/assets/img/icons",
       "packageCategory": "office",
       "maintainer": "makoto <makoto.kontakt@gmail.com>",
       "target": [
