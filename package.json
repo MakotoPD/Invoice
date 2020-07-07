@@ -17,7 +17,7 @@
   "author": "makoto <makoto.kontakt@gmail.com>",
   "license": "Apache-2.0",
   "devDependencies": {
-    "electron": "^8.2.0",
+    "electron": "^8.2.4",
     "electron-packager": "^14.2.1",
     "minimist": "^1.2.5"
   },
