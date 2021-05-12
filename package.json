@@ -27,7 +27,7 @@
     "electron-builder": "^22.4.1",
     "electron-store": "^5.1.1",
     "localStorage": "^1.0.4",
-    "mathjs": "^6.6.1",
+    "mathjs": "^7.5.1",
     "os": "^0.1.1",
     "popmotion": "^8.7.1"
   },
